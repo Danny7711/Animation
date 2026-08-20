@@ -1,33 +1,75 @@
-.color-change {
-   width: 100px;
-   height: 100px;
-   background-color: red;
-   animation: colorChange 3s infinite;
+.rotate {
+    width: 120px;
+    height: 120px;
+    background-color: purple;
+
+    
+    animation: rotate 3s infinite;
 }
 
-@keyframes colorChange {
-   0% {
-       background-color: red;
-   }
-   50% {
-       background-color: yellow;
-   }
-   100% {
-       background-color: red;
-   }
-}
-.notification {
-   animation: bounce 1s infinite;
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes bounce {
-   0%, 20%, 50%, 80%, 100% {
-       transform: translateY(0);
-   }
-   40% {
-       transform: translateY(-30px);
-   }
-   60% {
-       transform: translateY(-15px);
-   }
+.scale {
+    width: 100px;
+    height: 100px;
+    background-color: deepskyblue;
+
+    
+    animation: scale 2s infinite alternate;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.7);
+    }
+}
+
+.translate {
+    width: 130px;
+    height: 80px;
+    background-color: orange;
+
+    
+    animation: translate 3s infinite alternate;
+}
+
+@keyframes translate {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(150px, 70px);
+    }
+}
+
+.skew {
+    width: 120px;
+    height: 100px;
+    background-color: limegreen;
+
+    
+    animation: skew 2s infinite alternate;
+}
+
+@keyframes skew {
+    from {
+        transform: skew(0deg);
+    }
+
+    to {
+        transform: skew(25deg);
+    }
 }
